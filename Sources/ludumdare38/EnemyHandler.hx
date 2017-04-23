@@ -35,7 +35,7 @@ class EnemyHandler extends Basic
 		onTurn = true;
 		createZombies = Math.floor(MathUtils.clamp(Math.floor(turnCount / 5), turnCount > 2 ? 1 : 0, 15));
 		if (turnCount % 2 != 0) {
-			createZombies = 0;
+			createZombies = Math.floor(createZombies / 2);
 		}
 		thinkingTime = 2;
 		
