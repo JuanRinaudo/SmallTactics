@@ -15,5 +15,6 @@ class Main {
 	
 	public static function main() {
 		game = new Game(MenuState, GAME_WIDTH, GAME_HEIGHT);
+		Game.resizeStrategy = ResizeStrategy.SCALE_RATIO;
 	}
 }
